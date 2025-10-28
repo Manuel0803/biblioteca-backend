@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/prestamos")
+@RequestMapping("/prestamos")
 @Tag(name = "Préstamos", description = "API para la gestión de préstamos")
 @CrossOrigin(origins = "https://biblioteca-frontend-host.vercel.app")
 public class PrestamoController {

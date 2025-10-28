@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/categorias")
+@RequestMapping("/categorias")
 @Tag(name = "Categorías", description = "API para la gestión de categorías de libros")
 @CrossOrigin(origins = "https://biblioteca-frontend-host.vercel.app") 
 public class CategoriaController {
