@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/auth")
+@CrossOrigin(origins = "https://biblioteca-frontend-host.vercel.app") 
 public class AuthController {
 
     @Autowired
@@ -103,7 +104,7 @@ public class AuthController {
         private String dni;
 
         public LoginResponse(String token, String type, Integer id, String email, String rol, 
-                           String nombre, String apellido, String dni) {
+                             String nombre, String apellido, String dni) {
             this.token = token;
             this.type = type;
             this.id = id;

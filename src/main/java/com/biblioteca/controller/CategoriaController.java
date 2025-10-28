@@ -16,6 +16,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/categorias")
 @Tag(name = "Categorías", description = "API para la gestión de categorías de libros")
+@CrossOrigin(origins = "https://biblioteca-frontend-host.vercel.app") 
 public class CategoriaController {
 
     private final CategoriaService categoriaService;

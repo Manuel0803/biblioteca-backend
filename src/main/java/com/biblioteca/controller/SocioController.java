@@ -16,6 +16,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/socios")
 @Tag(name = "Socios", description = "API para la gestión de socios")
+@CrossOrigin(origins = "https://biblioteca-frontend-host.vercel.app") 
 public class SocioController {
 
     private final SocioService socioService;

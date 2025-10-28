@@ -15,6 +15,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/multas")
 @Tag(name = "Multas", description = "API para la gestión de multas")
+@CrossOrigin(origins = "https://biblioteca-frontend-host.vercel.app") 
 public class MultaController {
 
     private final MultaService multaService;
